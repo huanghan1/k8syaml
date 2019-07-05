@@ -28,6 +28,7 @@ kubectl get secret -n <namespace>
 
 
 #查看认证详情,对应的namespace
+
 kubectl describe secret -n voice-qyeureka-dev
 
 
