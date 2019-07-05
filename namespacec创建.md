@@ -20,7 +20,7 @@ metadata:      # #资源的元数据/属性
 
 #-n:指定namespace 
 
-kubectl create secret docker-registry xiaoniu -n $namespace --docker-server=192.168.0.90 --docker-username=admin --docker-password=123456 --docker-email=huanghan@xiaoniu.com
+kubectl create secret docker-registry xiaoniu -n voice-qyeureka-dev --docker-server=192.168.0.90 --docker-username=admin --docker-password=123456 --docker-email=huanghan@xiaoniu.com
 
 查看授权的私有仓库
 
