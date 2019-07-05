@@ -12,3 +12,22 @@ metadata:      # #资源的元数据/属性
    labels:   ##设定资源的标签，详情请见 http://blog.csdn.net/liyingke112/article/details/77482384
    
      name: voice-qyeureka-dev     #自定义注解名字
+
+
+创建k8s secret，访问docker私有仓库 k8s对私有仓库授权
+#docker-registry=docker的注册名字
+
+#-n:指定namespace 
+
+kubectl create secret docker-registry xiaoniu -n $namespace --docker-server=192.168.0.90 --docker-username=admin --docker-password=123456 --docker-email=huanghan@xiaoniu.com
+
+查看授权的私有仓库
+
+kubectl get secret -n <namespace>
+
+#查看认证详情
+kubectl describe secret 
+
+#删除认证注册的名字
+kubectl delete   secret  registrykey-01
+
