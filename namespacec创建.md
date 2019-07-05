@@ -35,3 +35,8 @@ kubectl describe secret
 
 kubectl delete   secret xiaoniu registrykey-01
 
+#删除namespace对应secret
+
+kubectl delete  secret  -n  voice-qyeureka-dev  default-token-g5kbl
+
+
