@@ -15,6 +15,7 @@ metadata:      # #资源的元数据/属性
 
 
 创建k8s secret，访问docker私有仓库 k8s对私有仓库授权
+
 #docker-registry=docker的注册名字
 
 #-n:指定namespace 
@@ -29,5 +30,8 @@ kubectl get secret -n <namespace>
 kubectl describe secret 
 
 #删除认证注册的名字
-kubectl delete   secret  registrykey-01
+
+#docker-registry=docker的注册名字
+
+kubectl delete   secret xiaoniu registrykey-01
 
