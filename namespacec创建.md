@@ -24,7 +24,7 @@ kubectl create secret docker-registry xiaoniu -n voice-qyeureka-dev --docker-ser
 
 查看授权的私有仓库
 
-kubectl get secret -n <namespace>
+kubectl get secret -n $<namespace>
 
 
 #查看认证详情,对应的namespace
