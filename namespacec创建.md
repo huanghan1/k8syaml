@@ -26,6 +26,11 @@ kubectl create secret docker-registry xiaoniu -n $namespace --docker-server=192.
 
 kubectl get secret -n <namespace>
 
+
+#查看认证详情,对应的namespace
+kubectl describe secret -n voice-qyeureka-dev
+
+
 #查看认证详情
 
 kubectl describe secret 
