@@ -1,6 +1,6 @@
 # k8syaml
 configmap配置字典 提供pods调用
-
+cat configmap.yaml
 kind: ConfigMap
 apiVersion: v1
 metadata:
