@@ -47,3 +47,12 @@ kubectl delete   secret xiaoniu registrykey-01
 kubectl delete  secret  -n  voice-qyeureka-dev  default-token-g5kbl
 
 
+#查看k8s容器应用
+
+ kubectl get pods -n getvideo-dev-default getcustomer-5c9f9f4cb8-tn6qr
+
+#进入k8s容器
+
+ kubectl exec -it getcustomer-5c9f9f4cb8-tn6qr -n getvideo-dev-default /bin/bash
+
+
