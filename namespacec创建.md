@@ -55,4 +55,8 @@ kubectl delete  secret  -n  voice-qyeureka-dev  default-token-g5kbl
 
  kubectl exec -it getcustomer-5c9f9f4cb8-tn6qr -n getvideo-dev-default /bin/bash
 
+#查看 deployment 详细信息
+
+kubectl describe  deployment  -n getvideo-dev-default getcustomer
+
 
