@@ -48,3 +48,5 @@ kubectl describe  deployment  -n getvideo-dev-default getcustomer
 kubectl get svc -n getvideo-dev-default getcustomer
 
 kubectl  describe svc -n getvideo-dev-default getcustomer
+查看更多详细信息
+kubectl describe secret -n getvideo-dev-default 
