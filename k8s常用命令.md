@@ -50,3 +50,10 @@ kubectl get svc -n getvideo-dev-default getcustomer
 kubectl  describe svc -n getvideo-dev-default getcustomer
 查看更多详细信息
 kubectl describe secret -n getvideo-dev-default 
+
+启用kubectl命令的自动补全功能
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+
+顺便也把linux bash 命令行也进行补全了
+yum install -y bash-completion
+
